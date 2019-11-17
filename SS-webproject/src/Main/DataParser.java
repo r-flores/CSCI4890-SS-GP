@@ -13,9 +13,11 @@ public class DataParser {
 	
 	public static void main(String[] args)
 	{
+		String outAC = "";
+		String outDC = "";
+		String input = "";
 		String filePath = "SolarUsageEstData.csv";
 		List<String> data = readFile(filePath);
-		System.out.print(data);
 	}
 	
 	public static List<String> readFile(String filePath) {
@@ -35,5 +37,17 @@ public class DataParser {
 		}
 		return contents;
 	   }
+	
+	public String outputAC() {
+		return null;
+	}
+	
+	public String outputDC() {
+		return null;
+	}
+	
+	public String input() {
+		return null;
+	}
 
 }

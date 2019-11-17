@@ -1,0 +1,75 @@
+<html>
+<head>
+
+<title>Sustainable Solutions Energy Manager</title>
+
+<style>
+header {
+    background-color:#cc99ff;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#f2e6ff;
+    height:75px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    text-align:center;
+    float:left;
+    padding:10px;	 	 
+}
+footer {
+    background-color:#cc99ff;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1><font face = "Tw Cen MT">Sustainable Solutions Energy Manager</font></h1>
+</header>
+
+
+<section>
+	<h1>View Energy Usage</h1>
+	
+	<form action="FormInsertDiary" method="POST">
+	<fieldset>
+          <legend>Select a Month</legend>
+          <p>
+             <label>Month</label>
+             <select id = "myList">
+               <option value = "1">January</option>
+               <option value = "2">February</option>
+               <option value = "3">March</option>
+               <option value = "4">April</option>
+               <option value = "5">May</option>
+               <option value = "6">June</option>
+               <option value = "7">July</option>
+               <option value = "8">August</option>
+               <option value = "9">September</option>
+               <option value = "10">October</option>
+               <option value = "11">November</option>
+               <option value = "12">December</option>
+             </select>
+             <input type="submit" value="Submit" />
+          </p>
+       </fieldset>	
+	</form>
+
+</section>
+
+<footer>
+</footer>
+</body>
+</html>
