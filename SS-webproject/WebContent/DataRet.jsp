@@ -52,40 +52,112 @@ h2 {
 			
 		}
 		if (Month.equals("2")){
-			info.append("Febuary Usage:\n");
+			info.append("Febuary Usage:" + "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("3")){
-			info.append("March Usage:\n");
+			info.append("March Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("4")){
-			info.append("April Usage:\n");
+			info.append("April Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("5")){
-			info.append("May Usage:\n");
+			info.append("May Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("6")){
-			info.append("june Usage:\n");
+			info.append("june Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("7")){
-			info.append("July Usage:\n");
+			info.append("July Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("8")){
-			info.append("Auguest Usage:\n");
+			info.append("Auguest Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("9")){
-			info.append("September Usage:\n");
+			info.append("September Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("10")){
-			info.append("October Usage:\n");
+			info.append("October Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("11")){
-			info.append("November Usage:\n");
+			info.append("November Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("12")){
-			info.append("December Usage:\n");
+			info.append("December Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
+			info.append("DC Array Output: 348401 W" + "<br>");
+			info.append("AC System  Output: 333487 W" + "<br>");
 		}
 		if (Month.equals("13")){
-			info.append("Total Usage:\n");
+			info.append("Total Usage:\n"+ "<br>");
+			info.append("Beam Irradiance(W/m^2): 135316\n" + "<br>");
+			info.append("Diffuse Irradiance(W/m^2): 55134\n" + "<br>");
+			info.append("Plance of Array Irradiance/(W/m^2): 20976\n" + "<br>");
+			info.append("Total Irradiance(W/m^2): 211426\n" + "<br>");
+			info.append("DC Array Output: 34401 W" + "<br>");
+			info.append("AC System  Output: 332831 W" + "<br>");
 		}
 		
 		return info.toString();
