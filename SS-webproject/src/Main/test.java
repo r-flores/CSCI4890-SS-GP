@@ -3,7 +3,7 @@ package Main;
 public class test {
 	public int testMethod(int num)
 	{
-		return num+1;
+		return num+2;
 	}
 
 }
