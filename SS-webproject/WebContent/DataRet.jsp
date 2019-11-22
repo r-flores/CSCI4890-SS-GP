@@ -54,7 +54,7 @@ h2 {
 		if (Month.equals("2")){
 			info.append("Febuary Usage:" + "<br>");
 			info.append("Beam Irradiance(W/m^2): 115316\n" + "<br>");
-			info.append("Diffuse Irradiance(W/m^2): 25134\n" + "<br>");
+			info.append("Diffuse sfvgbraavthgrsIrradiance(W/m^2): 25134\n" + "<br>");
 			info.append("Plance of Array Irradiance/(W/m^2): 96976\n" + "<br>");
 			info.append("Total Irradiance(W/m^2): 237426\n" + "<br>");
 			info.append("DC Array Output: 348401 W" + "<br>");

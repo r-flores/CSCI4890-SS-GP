@@ -15,6 +15,7 @@ public class DataParser {
 	{
 		String filePath = "SolarUsageEstData.csv";
 		List<String> data = readFile(filePath);
+		System.out.print(data);
 	}
 	
 	public static List<String> readFile(String filePath) {
