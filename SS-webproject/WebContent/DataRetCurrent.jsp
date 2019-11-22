@@ -20,7 +20,7 @@ h1 {
     text-align:center;
     padding:5px;	
     border-radius: 15px 15px 5px 5px;
-    width: 720px;
+    width: 721px;
     border-style: outset;
     text-shadow: 2px 2px #939799;
     margin-left: auto;
