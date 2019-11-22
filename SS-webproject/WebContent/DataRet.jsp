@@ -14,20 +14,40 @@
 <title>Usage Report</title>
 <style>
 h1 {
-    background-color:#cc99ff;
+    background-color: #ffb6c1;
     color:white;
     text-align:center;
-    padding:5px;	 
+    padding:5px;	
+    border-radius: 15px 15px 5px 5px;
+    width: 720px;
+    border-style: outset;
+    text-shadow: 2px 2px #939799;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
-h3 {
-    background-color:#f2e6ff;  	      
+body{
+	background-image: url("https://i.imgur.com/N4HoIKM.jpg");
+	background-repeat: no-repeat;
+	background-color:#cc99ff;
 }
+ 
 h2 {
-    background-color:#cc99ff;
+    background-color:#ffb6c1;
     color:white;
     clear:both;
     text-align:center;
-    padding:5px;	 	 
+    padding:5px;	
+    border-style: outset; 	
+    border-radius: 5px 5px 15px 15px;
+    width: 720px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+   color: white;
+   text-shadow: 2px 2px #939799;
+   text-align: center;
 }
 </style>
 </head>
