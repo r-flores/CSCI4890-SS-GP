@@ -1,4 +1,6 @@
 package Main;
+import com.google.gson.*;
+
 
 public class Emulator {
 	private SolarPanel panel;
@@ -46,7 +48,11 @@ public class Emulator {
 		}
 		return batteryOverDays;
 	}
-	
+	String runJSON(int days)
+	{
+		return new Gson().toJson(run(days));
+		
+	}
 	public static void main(String[] args)
 	{
 		Emulator emu = new Emulator();
