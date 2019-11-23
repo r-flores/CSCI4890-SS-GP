@@ -1,15 +1,15 @@
 package Main;
 
-
-
 public class Battery
 {
 	int min,max,current;
+	Battery()
+	{
+		this(0,2,1);
+	}
 	Battery(int min,int max, int current)
 	{
-		this.min = min;
-		this.max = max;
-		this.current = current;
+		setMinMaxCurrent(min,max,current);
 	}
 	
 	//SETS
@@ -24,6 +24,17 @@ public class Battery
 		this.max = max;
 	}
 	
+	boolean setMinMax(int min, int max)
+	{
+		if( min < max)
+		{
+			setMin(min);
+			setMax(max);
+			return true;
+		}
+		return false;
+	}
+	
 	boolean setCurrent(int current)
 	{
 			if(current <= max && current >= min)
@@ -35,6 +46,11 @@ public class Battery
 				return false;
 			}
 			return true;
+	}
+	
+	boolean setMinMaxCurrent(int min, int max, int current)
+	{
+		return setMinMax(min,max) && setCurrent(current);
 	}
 	
 	boolean changeCurrent(int change)

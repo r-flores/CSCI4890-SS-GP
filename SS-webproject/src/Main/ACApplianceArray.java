@@ -13,13 +13,16 @@ public class ACApplianceArray {
 		apps = new ACAppliance[numOfApps];
 	}
 	
-	void addACAppliance(int ampHours)
+	void addACAppliance(int usePerHour)
 	{
-		apps[numOfApps++] = new ACAppliance(ampHours);
+		apps[numOfApps++] = new ACAppliance(usePerHour);
 	}
-	void addACAppliance(int ampHours, int hoursOfUse)
+	boolean addACAppliance(int usePerHour, int hoursOfUse)
 	{
-		apps[numOfApps++] = new ACAppliance(ampHours, hoursOfUse);
+		boolean correctAdd = new ACAppliance().setUsePerHourSetHoursOfUse(usePerHour, hoursOfUse);
+		if(correctAdd)
+			apps[numOfApps++] = new ACAppliance(usePerHour,hoursOfUse);
+		return correctAdd;
 	}
 	
 	int netPerDay()
@@ -27,7 +30,7 @@ public class ACApplianceArray {
 		int net = 0;
 		for(int i = 0; i < numOfApps;i++)
 		{
-			net += apps[i].ampsPerDay();
+			net += apps[i].usePerDay();
 		}
 		return net;
 	}

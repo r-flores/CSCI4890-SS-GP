@@ -1,21 +1,46 @@
 package Main;
 
 public class Emulator {
-	public static void main(String[] args)
-	{
-		DCApplianceArray DCA = new DCApplianceArray(10);
-		SolarPanel panel = new SolarPanel(100,8);
-		Battery battery = new Battery(1000,2000,1500);
-		DCA.addDCAppliance(801, 1);
-		while(battery.setCurrent(battery.current + panel.ampsPerDay() - DCA.netPerDay()))
-			System.out.println(battery.current);
-		System.out.println("broken");
-	}
+	SolarPanel panel;
+	Battery battery;
+	ACApplianceArray ac;
+	DCApplianceArray dc;
+	final int arraySize = 10;
 	
-	Emulator(int min, int max, int current, int )
+	Emulator ()
 	{
+		panel = new SolarPanel();
+		battery = new Battery();
+		ac = new ACApplianceArray(10);
+		dc = new DCApplianceArray(10);
 		
 	}
-	
 
+	boolean setPanel(int usePerHour, int hoursOfUse)
+	{
+		return panel.setUsePerHourSetHoursOfUse(usePerHour, hoursOfUse);
+	}
+	
+	boolean setBattery(int min, int max, int current)
+	{
+		return battery.setMinMaxCurrent(min, max, current);
+	}
+	
+	boolean addACAppliance(int usePerHour, int hoursOfUse)
+	{
+		return ac.addACAppliance(usePerHour, hoursOfUse);
+	}
+	
+	boolean addDCAppliance(int usePerHour, int hoursOfUse)
+	{
+		return dc.addDCAppliance(usePerHour, hoursOfUse);
+	}
+	
+	public static void main(String[] args)
+	{
+		Emulator emu = new Emulator();
+	}
+	
+	
+	
 }

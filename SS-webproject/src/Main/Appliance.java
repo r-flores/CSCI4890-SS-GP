@@ -4,28 +4,44 @@ public abstract class Appliance {
 	private float usePerHour, hoursOfUse;
 	
 	
+	Appliance()
+	{
+		this(0,0);
+	}
+	
 	Appliance(float usePerHour)
 	{
-		setAmpHours(usePerHour);
+		setUsePerHour(usePerHour);
 	}
 	
 	Appliance(float usePerHour,float hoursOfUse)
 	{
-		this(usePerHour);
+		setUsePerHour(usePerHour);
 		setHoursOfUse(hoursOfUse);
 	}
 	
 	//SETS
 	
-	void setAmpHours(float usePerHour)
+	boolean setUsePerHour(float usePerHour)
 	{
-		this.usePerHour = usePerHour;
+		boolean correctSet = usePerHour > 0;
+		this.usePerHour = correctSet ? usePerHour : 0;
+		return correctSet;
 	}
 	
-	void setHoursOfUse(float hoursOfUse)
+	boolean setHoursOfUse(float hoursOfUse)
 	{
-		this.hoursOfUse = hoursOfUse;
+		boolean correctSet = hoursOfUse > 0;
+		this.hoursOfUse = correctSet ? hoursOfUse : 0;
+		return correctSet;
 	}
+	
+	boolean setUsePerHourSetHoursOfUse(float usePerHour, float hoursOfUse)
+	{
+		return setUsePerHour(usePerHour) && setHoursOfUse(hoursOfUse);
+	}
+	
+	
 	
 	//GETS
 	

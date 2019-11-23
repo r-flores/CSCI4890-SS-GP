@@ -13,13 +13,16 @@ public class DCApplianceArray {
 		apps = new DCAppliance[numOfApps];
 	}
 	
-	void addDCAppliance(int ampHours)
+	void addDCAppliance(int usePerHour)
 	{
-		apps[numOfApps++] = new DCAppliance(ampHours);
+		apps[numOfApps++] = new DCAppliance(usePerHour);
 	}
-	void addDCAppliance(int ampHours, int hoursOfUse)
+	boolean addDCAppliance(int usePerHour, int hoursOfUse)
 	{
-		apps[numOfApps++] = new DCAppliance(ampHours, hoursOfUse);
+		boolean correctAdd = new DCAppliance().setUsePerHourSetHoursOfUse(usePerHour, hoursOfUse);
+		if(correctAdd)
+			apps[numOfApps++] = new DCAppliance(usePerHour,hoursOfUse);
+		return correctAdd;
 	}
 	
 	int netPerDay()
@@ -27,7 +30,7 @@ public class DCApplianceArray {
 		int net = 0;
 		for(int i = 0; i < numOfApps;i++)
 		{
-			net += apps[i].ampsPerDay();
+			net += apps[i].usePerDay();
 		}
 		return net;
 	}
