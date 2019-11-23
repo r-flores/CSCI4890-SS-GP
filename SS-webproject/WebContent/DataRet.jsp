@@ -46,7 +46,7 @@ h2 {
     padding:5px;	
     border-style: outset; 	
     border-radius: 5px 5px 15px 15px;
-    width: 720px; 
+    width: 721px; 
     margin-left: auto;
     margin-right: auto;
 }
