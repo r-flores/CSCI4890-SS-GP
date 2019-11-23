@@ -2,29 +2,29 @@ package Main;
 
 public class Battery
 {
-	int min,max,current;
+	float min,max,current;
 	Battery()
 	{
 		this(0,2,1);
 	}
-	Battery(int min,int max, int current)
+	Battery(float min,float max, float current)
 	{
 		setMinMaxCurrent(min,max,current);
 	}
 	
 	//SETS
 	
-	void setMin(int min)
+	void setMin(float min)
 	{
 		this.min = min;
 	}
 	
-	void setMax(int max)
+	void setMax(float max)
 	{
 		this.max = max;
 	}
 	
-	boolean setMinMax(int min, int max)
+	boolean setMinMax(float min, float max)
 	{
 		if( min < max)
 		{
@@ -35,7 +35,7 @@ public class Battery
 		return false;
 	}
 	
-	boolean setCurrent(int current)
+	boolean setCurrent(float current)
 	{
 			if(current <= max && current >= min)
 			{
@@ -48,12 +48,12 @@ public class Battery
 			return true;
 	}
 	
-	boolean setMinMaxCurrent(int min, int max, int current)
+	boolean setMinMaxCurrent(float min, float max, float current)
 	{
 		return setMinMax(min,max) && setCurrent(current);
 	}
 	
-	boolean changeCurrent(int change)
+	boolean changeCurrent(float change)
 	{
 		if(current + change > max)
 			return setCurrent(max);
@@ -61,6 +61,11 @@ public class Battery
 			return setCurrent(min) && false;
 		return setCurrent(current + change);
 		
+	}
+	
+	float getCurrent()
+	{
+		return current;
 	}
 
 }

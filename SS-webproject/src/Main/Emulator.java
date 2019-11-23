@@ -1,10 +1,10 @@
 package Main;
 
 public class Emulator {
-	SolarPanel panel;
-	Battery battery;
-	ACApplianceArray ac;
-	DCApplianceArray dc;
+	private SolarPanel panel;
+	private Battery battery;
+	private ACApplianceArray ac;
+	private DCApplianceArray dc;
 	final int arraySize = 10;
 	
 	Emulator ()
@@ -35,10 +35,30 @@ public class Emulator {
 	{
 		return dc.addDCAppliance(usePerHour, hoursOfUse);
 	}
+	float[] run(int days)
+	{
+		float[] batteryOverDays = new float[days];
+		for( int i = 0; i < days; i++)
+		{
+			batteryOverDays[i] = battery.getCurrent();
+			if(!battery.changeCurrent(panel.usePerDay() - ac.netPerDay() - dc.netPerDay()))
+				batteryOverDays[i] = -1;
+		}
+		return batteryOverDays;
+	}
 	
 	public static void main(String[] args)
 	{
 		Emulator emu = new Emulator();
+		emu.setPanel(100, 6);
+		emu.setBattery(1000, 2000, 1500);
+		emu.addACAppliance(30, 4);
+		emu.addDCAppliance(190,3);
+		float[] runOverDays = emu.run(10);
+		for(int i=0;i<runOverDays.length;i++)
+			System.out.println(runOverDays[i]);
+		
+		
 	}
 	
 	
