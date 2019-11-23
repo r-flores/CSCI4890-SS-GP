@@ -3,13 +3,13 @@ import com.google.gson.*;
 
 
 public class Emulator {
-	private SolarPanel panel;
-	private Battery battery;
-	private ACApplianceArray ac;
-	private DCApplianceArray dc;
+	public SolarPanel panel;
+	public Battery battery;
+	public ACApplianceArray ac;
+	public DCApplianceArray dc;
 	final int arraySize = 10;
 	
-	Emulator ()
+	public Emulator()
 	{
 		panel = new SolarPanel();
 		battery = new Battery();
@@ -18,26 +18,26 @@ public class Emulator {
 		
 	}
 
-	boolean setPanel(int usePerHour, int hoursOfUse)
+	public boolean setPanel(int usePerHour, int hoursOfUse)
 	{
 		return panel.setUsePerHourSetHoursOfUse(usePerHour, hoursOfUse);
 	}
 	
-	boolean setBattery(int min, int max, int current)
+	public boolean setBattery(int min, int max, int current)
 	{
 		return battery.setMinMaxCurrent(min, max, current);
 	}
 	
-	boolean addACAppliance(int usePerHour, int hoursOfUse)
+	public boolean addACAppliance(int usePerHour, int hoursOfUse)
 	{
 		return ac.addACAppliance(usePerHour, hoursOfUse);
 	}
 	
-	boolean addDCAppliance(int usePerHour, int hoursOfUse)
+	public boolean addDCAppliance(int usePerHour, int hoursOfUse)
 	{
 		return dc.addDCAppliance(usePerHour, hoursOfUse);
 	}
-	float[] run(int days)
+	public float[] run(int days)
 	{
 		float[] batteryOverDays = new float[days];
 		for( int i = 0; i < days; i++)

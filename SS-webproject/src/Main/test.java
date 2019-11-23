@@ -1,9 +1,9 @@
 package Main;
 
 public class test {
-	public int testMethod(int num)
+	public String testMethod(String num)
 	{
-		return num+3;
+		return num;
 	}
 
 }
