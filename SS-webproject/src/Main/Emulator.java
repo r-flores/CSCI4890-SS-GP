@@ -7,12 +7,7 @@ public class Emulator {
 	public ACApplianceArray ac;
 	public DCApplianceArray dc;
 	final int arraySize = 10;
-	
-<<<<<<< HEAD
 	public Emulator()
-=======
-	public Emulator ()
->>>>>>> branch 'master' of https://github.com/r-flores/CSCI4890-SS-GP.git
 	{
 		panel = new SolarPanel();
 		battery = new Battery();

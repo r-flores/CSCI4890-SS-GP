@@ -88,9 +88,7 @@ h3{
 							{
 								map = new HashMap<Object,Object>(); map.put("label", "day "+i); map.put("y", nums[i]); list.add(map);	
 							}
-							map = new HashMap<Object,Object>(); map.put("label", "1973"); map.put("y", 1883.96); list.add(map);
-							map = new HashMap<Object,Object>(); map.put("label", "1974"); map.put("y", 1814.907); list.add(map);
-							map = new HashMap<Object,Object>(); map.put("label", "1975"); map.put("y", 1679.773); list.add(map);
+			
 							String dataPoints = gsonObj.toJson(list);
 						%>
 	
