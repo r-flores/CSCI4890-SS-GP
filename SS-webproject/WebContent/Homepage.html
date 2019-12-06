@@ -86,28 +86,19 @@ footer {
 
 <section>
 	<h1>Battery</h1>
-	
 	<form action="DataRet.jsp" method="POST">
 		<fieldset>
 		Min: <input type="text" name="Min"> <br />
 		Max: <input type="text" name="Max"> <br />
 		Current: <input type="text" name="Current"> <br />
-		Units: <input type="text" name="Units"> <br />
-		Hours: <input type="text" name="Hours"> <br />
+	<h1>Solar</h1>
+		Units/Hour: <input type="text" name="Units"> <br />
+	<h1>AC appliance</h1>
+		Units/Hour: <input type="text" name="ACUnits"> <br />
+	<h1>DC appliance</h1>
+		Units/Hour: <input type="text" name="DCUnits"> <br />
 		<input type="submit" value="Continue" />
     	</fieldset>	
-	</form>
-
-</section>
-<section>
-	<h1>View Current Energy Usage</h1>
-	
-	<form action="DataRetCurrent.jsp" method="POST">
-	<fieldset>
-          <p>
-	          <input type="submit" value="Continue" />
-          </p>
-       </fieldset>	
 	</form>
 
 </section>

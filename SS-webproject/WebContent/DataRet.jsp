@@ -76,10 +76,10 @@ h3{
 	
 						<%
 							Emulator emu = new Emulator();
-						emu.setPanel(100,6);
-						emu.setBattery(1000,2000,1500);
-						emu.addACAppliance(100,3);
-						emu.addDCAppliance(100,3);
+							emu.setPanel(100,6);
+							emu.setBattery(1000,2000,1500);
+							emu.addACAppliance(100,3);
+							emu.addDCAppliance(100,3);
 							Gson gsonObj = new Gson();
 							Map<Object,Object> map = null;
 							List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
