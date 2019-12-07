@@ -136,13 +136,13 @@ footer {
 </header>
 <section>
 	<h1>Battery</h1>
+	<form method="post" action="sss">
 		<fieldset>
 		Min: <input type="text" name="Min"> <br />
 		Max: <input type="text" name="Max"> <br />
 		Current: <input type="text" name="Current"> <br />
-	<h1>Solar</h1>
+		<h1>Solar</h1>
 		Units/Hour: <input type="text" name="Units"> <br />
-    	</fieldset>
 		<div id="readroot" style="display: none">
             <input type="button" value="Remove AC Appliance"
                    onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
@@ -157,16 +157,14 @@ footer {
             Watts<input type="text" name="DCUnits">
         </div>
 
-        <form method="post" action="DataRet.jsp">
-
             <span id="writeroot"></span>
 
             <input type="button" onclick="moreFieldsAC()" value="Add addition AC appliance" />
             <input type="button" onclick="moreFieldsDC()" value="Add addition DC appliance" />
             <br />
             <input type="submit" value="Submit" />
-
-        </form>
+		</fieldset>
+     </form>
 </section>
 </body>
 </html>

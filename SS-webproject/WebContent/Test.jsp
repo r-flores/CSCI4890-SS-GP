@@ -64,15 +64,13 @@ h3{
 	<%!String Max;%>
 	<%!String Min;%>
 	<%!String Current;%>
-	<%!String Solar;%>
-	<%!String ACunits;%>
-	<%!String DCunits;%>
+	<%!String Units;%>
+	<%!String Hours;%>
 	<%Max = request.getParameter("Max");%>
 	<%Min = request.getParameter("Min");%>
 	<%Current = request.getParameter("Current");%>
-	<%Solar = request.getParameter("Units");%>
-	<%ACunits = request.getParameter("ACUnits");%>
-	<%DCunits = request.getParameter("DCUnits");%>
+	<%Units = request.getParameter("Units");%>
+	<%Hours = request.getParameter("Hours");%>
 	<%=run()%>
 	
 	
@@ -99,14 +97,14 @@ h3{
 	
 	<%!String run() throws SQLException {
 		test t = new test();
+		String c = t.testMethod("Hello");
 		Emulator em = new Emulator();
 		StringBuilder info = new StringBuilder();
 		info.append("Max:" + Max);
 		info.append("Min:" + Min);
 		info.append("Current:" +Current);
-		info.append("Solar:" + Solar);
-		info.append("|||||||||||||:" + ACunits);
-		info.append("||||||||||||||||:" + DCunits);
+		info.append("UNITS:" +Units);
+		info.append("Hours:" + c);
 		return info.toString();
 	}%>
 						<script type="text/javascript">
@@ -147,7 +145,7 @@ h3{
 				<div id="chartContainer" style="height: 370px; width: 100%;"></div>
 				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	<h2>
-	<a href=/SS-webproject/HomepageSelection.jsp>Return</a> <br>
+	<a href=/SS-webproject/Homepage.html>Return</a> <br>
 	</h2>
 </body>
 </html>
