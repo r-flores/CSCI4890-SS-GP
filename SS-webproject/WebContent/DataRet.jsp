@@ -10,6 +10,11 @@
 <%@page import="com.google.gson.Gson"%>
 <%@page import="com.google.gson.JsonObject"%>
 
+
+<%@page import="javax.servlet.http.HttpServlet"%>
+<%@page import="javax.servlet.http.HttpServletRequest"%>
+<%@page import="javax.servlet.http.HttpServletResponse"%>
+
 <%@ page language="java" import="java.sql.*"
 	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 		
@@ -61,31 +66,24 @@ h3{
 
 	<h1 align="center"> Usage for this month </h1>
 	<h3>
-	<%!String Max;%>
-	<%!String Min;%>
-	<%!String Current;%>
-	<%!String Solar;%>
-	<%!String ACunits;%>
-	<%!String DCunits;%>
-	<%Max = request.getParameter("Max");%>
-	<%Min = request.getParameter("Min");%>
-	<%Current = request.getParameter("Current");%>
-	<%Solar = request.getParameter("Units");%>
-	<%ACunits = request.getParameter("ACUnits");%>
-	<%DCunits = request.getParameter("DCUnits");%>
+	<% ArrayList<Double> runOverDays = (ArrayList<Double>)request.getAttribute("runOverDays"); %>
+	<% for(Double day: runOverDays)
+		System.out.println(day.doubleValue());
+		
+		
+		
+		%>
+	
+	
+	
 	<%=run()%>
 	
 	
 						<%
-							Emulator emu = new Emulator();
-							emu.setPanel(100,6);
-							emu.setBattery(1000,2000,1500);
-							emu.addACAppliance(100,3);
-							emu.addDCAppliance(100,3);
 							Gson gsonObj = new Gson();
 							Map<Object,Object> map = null;
 							List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
-							float[] nums = emu.run(100);
+							float[] nums = new float[]{1.0f,1.2f};
 							for( int i = 0 ; i < nums.length; i++)
 							{
 								map = new HashMap<Object,Object>(); map.put("label", "day "+i); map.put("y", nums[i]); list.add(map);	
@@ -98,15 +96,10 @@ h3{
 	
 	
 	<%!String run() throws SQLException {
-		test t = new test();
-		Emulator em = new Emulator();
+		
 		StringBuilder info = new StringBuilder();
-		info.append("Max:" + Max);
-		info.append("Min:" + Min);
-		info.append("Current:" +Current);
-		info.append("Solar:" + Solar);
-		info.append("|||||||||||||:" + ACunits);
-		info.append("||||||||||||||||:" + DCunits);
+		
+			
 		return info.toString();
 	}%>
 						<script type="text/javascript">
